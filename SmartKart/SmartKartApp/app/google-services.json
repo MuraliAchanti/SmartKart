@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "806739689810",
+    "firebase_url": "https://smartkart-86450.firebaseio.com",
+    "project_id": "smartkart-86450",
+    "storage_bucket": "smartkart-86450.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806739689810:android:6352891362010639",
+        "android_client_info": {
+          "package_name": "com.ncr.smartkart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806739689810-ru92goi7d772tr6n0p981fp8lgdmvhja.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ncr.smartkart",
+            "certificate_hash": "4a82b18284be7ed66983d105a6a727a1dd4af158"
+          }
+        },
+        {
+          "client_id": "806739689810-3d7jsi7cm33soi21o5d81crf21dde22p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaVep0Y0U5GX2_POWt8WvrcMrMKekDl6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806739689810-3d7jsi7cm33soi21o5d81crf21dde22p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

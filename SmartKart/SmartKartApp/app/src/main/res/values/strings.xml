@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SmartKart</string>
+    <string name="google_sign_in">Google Sign-In</string>
+    <string name="next">Next</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="resend_in">Resend in</string>
+    <string name="resend">Resend</string>
+    <string name="start_shopping">Start Shopping</string>
+    <string name="item_id">Item Id : </string>
+    <string name="item_price">Item Price : </string>
+    <string name="item_weight">Item Weight : </string>
+    <string name="item_name">Item Name : </string>
+    <string name="quantity">Quantity </string>
+    <string name="profile">Profile</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="logout">Logout</string>
+    <string name="no_shopping_history">No Shopping History :(</string>
+    <string name="smart_kart">Smart Kart</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="signUpViewModel"
+            type="com.ncr.smartkart.viewModel.SignInViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.ncr.smartkart.utils.OTP
+            android:id="@+id/input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/size20dp"
+            android:focusable="true"
+            android:imeOptions="actionGo"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textSize="@dimen/size24sp" />
+
+        <TextView
+            android:id="@+id/timer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_phone"
+            android:layout_marginStart="@dimen/size20dp"
+            android:layout_marginLeft="@dimen/size20dp"
+            android:layout_marginBottom="@dimen/size5dp"
+            android:paddingRight="@dimen/size4dp"
+            android:text="@string/resend_in"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/count_down_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_phone"
+            android:layout_toEndOf="@id/timer_text"
+            android:layout_toRightOf="@id/timer_text"
+            android:textSize="@dimen/size16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/verfication_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/count_down_timer"
+            android:layout_marginStart="@dimen/size20dp"
+            android:layout_marginLeft="@dimen/size20dp"
+            android:layout_marginTop="@dimen/size5dp"
+            android:text="Waiting for OTP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resend_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verfication_status"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/size20dp"
+            android:layout_marginLeft="@dimen/size20dp"
+            android:layout_marginTop="@dimen/size10dp"
+            android:background="@drawable/about_background_layout"
+            android:padding="@dimen/size20dp"
+            android:text="@string/resend"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>

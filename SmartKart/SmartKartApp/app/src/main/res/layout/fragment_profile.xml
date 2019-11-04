@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="mainViewModel"
+            type="com.ncr.smartkart.viewModel.MainViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:cardBackgroundColor="@color/skyBlue">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/profile"
+                    android:textColor="@color/white"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/appbar_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/profile_picture" />
+
+        <TextView
+            android:id="@+id/profile_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_user_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_phone_numer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_user_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/user_profile_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size2dp"
+            android:layout_below="@id/profile_phone_numer"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginTop="@dimen/size15dp"
+            android:layout_marginRight="@dimen/size10dp"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_profile_divider"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/skyBlue"
+            android:padding="@dimen/size20dp"
+            android:text="@string/logout"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size20sp" />
+    </RelativeLayout>
+
+</layout>

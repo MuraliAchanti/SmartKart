@@ -1,0 +1,69 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="signInViewModel"
+            type="com.ncr.smartkart.viewModel.SignInViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/phone_number_text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/size20dp"
+            android:layout_marginRight="@dimen/size20dp"
+            app:mtf_backgroundColor="#E0E0E0"
+            app:mtf_image="@drawable/ic_local_phone_black_24dp"
+            app:mtf_labelColor="@color/black"
+            app:mtf_openKeyboardOnFocus="true">
+
+            <EditText
+                android:id="@+id/phone_number_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:hint="@string/phone_number"
+                android:imeOptions="actionGo"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textCursorDrawable="@drawable/cursor_drawable_black"
+                android:textSize="17sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_number_text_field"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/size20dp"
+            android:layout_marginEnd="@dimen/size20dp"
+            android:layout_marginRight="@dimen/size20dp"
+            android:background="@color/black"
+            android:onClick="@{()->signInViewModel.startPhoneNumberVerification()}"
+            android:paddingLeft="@dimen/size20dp"
+            android:paddingTop="@dimen/size10dp"
+            android:paddingRight="@dimen/size20dp"
+            android:paddingBottom="@dimen/size10dp"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="mainViewModel"
+            type="com.ncr.smartkart.viewModel.MainViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:fitsSystemWindows="true"
+            android:onClick="@{()-> mainViewModel.startShopping()}"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="scanQR.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="#69CAF7"
+            android:gravity="center"
+            android:onClick="@{()-> mainViewModel.startShopping()}"
+            android:text="@string/start_shopping"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="20sp"
+            app:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+</layout>
